@@ -4,14 +4,22 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "start": "doppler run -- node src/server.js",
+    "dev": "doppler run -- nodemon node_modules/@ceofyeast/fpcserver/src/server",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "dependencies": {
+    "@ceofyeast/fpcserver": "^1.0.0",
+    "axios": "^1.10.0",
     "core-js": "^3.8.3",
+    "node-polyfill-webpack-plugin": "^4.1.0",
+    "node.js": "^0.0.1-security",
     "vue": "^3.2.13"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-service": "~5.0.0"
+    "@vue/cli-service": "~5.0.0",
+    "nodemon": "^3.1.10"
   }
 }

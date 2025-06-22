@@ -1,4 +1,13 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue"
 
-createApp(App).mount('#app')
+import("@/components/App.vue").then((AppModule) => {
+    createApp(AppModule.default)
+    .mount("#app");
+})
+
+
+
+/**
+ * - Router is imported from router.js file, where it is defined
+ * - Router is then added to the app
+ */
