@@ -10,7 +10,7 @@
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "dependencies": {
-    "@ceofyeast/fpcserver": "^1.0.0",
+    "@ceofyeast/fpc-server": "^1.0.0",
     "axios": "^1.10.0",
     "core-js": "^3.8.3",
     "node-polyfill-webpack-plugin": "^4.1.0",
